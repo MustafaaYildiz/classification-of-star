@@ -320,9 +320,9 @@ else:
 # ---------------------------------------------------------
 # 8. SHAP Summary Plot (Orijinal Feature Uzayı)
 # ---------------------------------------------------------
-# Orijinal/ölçeklenmiş X_test ve sütun isimleri
-X_test_scaled = X_test  # (Eğer X_test zaten scale edilmiş hale sahipseniz)
-feature_names = X.columns  # Orijinal sütun isimleri
+i
+X_test_scaled = X_test  
+feature_names = X.columns  
 
 print("\nSHAP Summary Plot for Original Features")
 if shap_values_mean is not None:
@@ -390,9 +390,7 @@ def modify_o_class_subclass(df, class_column, subclass_column, o_subclass_target
     modified_df.loc[modified_df[class_column] == 'O', subclass_column] = o_subclass_target
     return modified_df
 
-# Example dataset (Ensure your actual dataset `df` is defined or loaded here)
-# df = pd.read_csv("your_dataset.csv")  # Uncomment to load your data
-# Parameters
+
 class_column = 'class'
 subclass_column = 'subclass_value'
 o_subclass_target = 181
